@@ -1,0 +1,16 @@
+{
+  "name": "forest-blockchain",
+  "version": "1.0.0",
+  "description": "Blockchain-based forest traceability system",
+  "main": "blockchain.js",
+  "scripts": {
+    "start": "node blockchain.js"
+  },
+  "keywords": [
+    "blockchain",
+    "forest-traceability",
+    "timber-legality"
+  ],
+  "author": "Edmond DONDON",
+  "license": "MIT"
+}
