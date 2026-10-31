@@ -1,0 +1,17 @@
+{
+  "eventId": "log-event-001",
+  "eventType": "LOG_CREATED",
+  "treeId": "TREE-001",
+  "grumeId": "GRUME-001",
+  "concessionId": "PEA-001",
+  "aacNumber": "AAC-2026-01",
+  "actorId": "operator-001",
+  "actorRole": "FOREST_OPERATOR",
+  "quantity": 8.45,
+  "unit": "m3",
+  "arenaRecordId": "ARENA-RECORD-001",
+  "details": {
+    "species": "Sapelli",
+    "note": "Synthetic example"
+  }
+}

@@ -1,16 +1,21 @@
 {
-  "name": "forest-blockchain",
-  "version": "1.0.0",
-  "description": "Blockchain-based forest traceability system",
-  "main": "blockchain.js",
+  "name": "forest-traceability-js",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OpenForis Arena integration API and permissioned forest traceability ledger prototype",
+  "type": "module",
+  "engines": { "node": ">=20" },
   "scripts": {
-    "start": "node blockchain.js"
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "demo": "node scripts/demo.js"
   },
-  "keywords": [
-    "blockchain",
-    "forest-traceability",
-    "timber-legality"
-  ],
-  "author": "Edmond DONDON",
-  "license": "MIT"
+  "dependencies": {
+    "@grpc/grpc-js": "^1.13.4",
+    "@hyperledger/fabric-gateway": "^1.7.1",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0"
+  }
 }

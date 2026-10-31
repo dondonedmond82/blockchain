@@ -1,0 +1,49 @@
+{
+  "source": "OpenForis Arena survey backup supplied by the project owner",
+  "surveyUuid": "347f40e4-7763-44d8-973a-c16673b08700",
+  "surveyName": "rca_modele_legalite_tracabilite_checklis",
+  "mappingStatus": "initial mapping; confirm actual record payload and UUIDs against the installed Arena API before enabling synchronization",
+  "confirmedFields": {
+    "inventory": {
+      "entity": "inventaire",
+      "treeId": "n_arbre_idventaire",
+      "species": "essence_d_arbre"
+    },
+    "harvest": {
+      "entity": "tableau_carnet_de_chantier_abattage",
+      "treeIdReference": "n_inventaire",
+      "harvestDate": "date_abattage"
+    },
+    "log": {
+      "entity": "log_a_grumes",
+      "grumeId": "grume_id_",
+      "treeIdReference": "arbre_id_parc_a_gumes",
+      "lineId": "ligne_id_grume"
+    },
+    "transport": {
+      "entity": "transport",
+      "grumeId": "grume_id",
+      "transporter": "nom_de_transporteur",
+      "transportDate": "date_de_transport",
+      "lineId": "ligne_id_transport"
+    },
+    "aac": {
+      "entity": "aac",
+      "aacNumber": "numero_d_aac"
+    },
+    "processing": {
+      "entity": "transformation",
+      "note": "This survey includes aggregate transformation reporting. Individual input-log to output-product genealogy must be confirmed or added before claiming piece-level traceability after processing."
+    },
+    "export": {
+      "entity": "exportation",
+      "note": "Confirm the precise export document and timber-lot references in the actual record structure before mapping."
+    }
+  },
+  "normalization": {
+    "grume_id_": "grumeId",
+    "grume_id": "grumeId",
+    "n_arbre_idventaire": "treeId",
+    "arbre_id_parc_a_gumes": "treeId"
+  }
+}
